@@ -1,0 +1,13 @@
+apiVersion: appstudio.redhat.com/v1alpha1
+kind: ReleasePlan
+metadata:
+ labels:
+   release.appstudio.openshift.io/auto-release: 'true'
+ name: arik-production 
+ namespace: achernet-tenant 
+spec:
+ application: go-basic-app-test-arik 
+ data: <key> 
+ pipelineRef: <pipeline_ref> 
+ serviceAccount:  <service-account> 
+ target: achernet-tenant 
